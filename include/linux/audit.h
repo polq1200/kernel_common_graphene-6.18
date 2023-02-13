@@ -285,6 +285,10 @@ static inline int audit_signal_info(int sig, struct task_struct *t)
 
 static inline void audit_cfg_lsm(const struct lsm_id *lsmid, int flags)
 { }
+static inline int audit_update_lsm_rules(void)
+{
+	return 0;
+}
 
 #endif /* CONFIG_AUDIT */
 
