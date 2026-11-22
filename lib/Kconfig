@@ -402,7 +402,7 @@ config CPUMASK_OFFSTACK
 	  stack overflow.
 
 config FORCE_NR_CPUS
-	def_bool !SMP
+	bool "Force NR_CPUS"	
 
 config CPU_RMAP
 	bool
