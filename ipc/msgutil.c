@@ -36,6 +36,8 @@ struct ipc_namespace init_ipc_ns = {
 	.ns.ns_type = ns_common_type(&init_ipc_ns),
 };
 
+EXPORT_SYMBOL(init_ipc_ns);
+
 struct msg_msgseg {
 	struct msg_msgseg *next;
 	/* the next part of the message follows immediately */

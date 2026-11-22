@@ -210,6 +210,8 @@ void put_ipc_ns(struct ipc_namespace *ns)
 	}
 }
 
+EXPORT_SYMBOL(put_ipc_ns);
+
 static struct ns_common *ipcns_get(struct task_struct *task)
 {
 	struct ipc_namespace *ns = NULL;

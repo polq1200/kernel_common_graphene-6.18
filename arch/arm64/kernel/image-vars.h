@@ -58,7 +58,9 @@ PI_EXPORT_SYM(id_aa64zfr0_override);
 PI_EXPORT_SYM(arm64_sw_feature_override);
 PI_EXPORT_SYM(arm64_use_ng_mappings);
 PI_EXPORT_SYM(_ctype);
+#ifdef CONFIG_RANDOMIZE_BASE
 PI_EXPORT_SYM(memstart_offset_seed);
+#endif
 
 PI_EXPORT_SYM(swapper_pg_dir);
 
